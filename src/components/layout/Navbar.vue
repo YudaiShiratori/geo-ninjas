@@ -5,7 +5,7 @@
         <a href="" class="brand-logo">GeoNinjas</a>
         <ul class="right">
           <li>
-            <a href="">Login</a>
+            <router-link :to="{ name: 'Login'}">Login</router-link>
           </li>
           <li>
             <router-link :to="{ name: 'signup' }">signup</router-link>
@@ -30,7 +30,7 @@ export default {
   methods: {
     logout() {
       firebase.auth().signOut().then(() => {
-        this.$router.push({ name: 'Signup' })
+        this.$router.push({ name: 'Login' })
       })
     }
   }
