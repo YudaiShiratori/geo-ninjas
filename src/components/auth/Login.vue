@@ -37,9 +37,9 @@ export default {
         .then(user => {
           this.$router.push({ name: 'GMap'})
           console.log(user)
-        }).catch(err) {
+        }).catch(err => {
           this.feedback = err.message
-        }
+        })
         this.feedback = null
       } else {
         this.feedback = 'You must enter'

@@ -32,6 +32,9 @@ export default {
       firebase.auth().signOut().then(() => {
         this.$router.push({ name: 'Login' })
       })
+    },
+    created () {
+      let user = firebase.auth().currentUser
     }
   }
 }
