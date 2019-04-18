@@ -17,7 +17,7 @@
       <div class="field center">
         <p class="red-text" v-if="feedback">{{ feedback }}</p>
         <button class="btn purple">
-          SignUp
+          Signup
         </button>
       </div>
     </form>
