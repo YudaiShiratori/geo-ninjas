@@ -8,7 +8,7 @@
             <router-link :to="{ name: 'Login'}">Login</router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'signup' }">signup</router-link>
+            <router-link :to="{ name: 'Signup' }">signup</router-link>
           </li>
           <li><a @click="logout">Logout</a></li>
         </ul>
